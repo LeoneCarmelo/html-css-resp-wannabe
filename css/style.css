@@ -127,3 +127,61 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+/* #region Mobile */
+ @media screen and ( max-width: 480px ) {
+    .container {
+        max-width:480px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .lessons .col {
+        width:65%;
+    }
+
+    .lessons .row .col:last-child {
+        margin-top: 3rem;
+    }
+
+    .steps {
+        margin-bottom: 0;
+    }
+
+    .steps .col {
+        width:100%;
+    }
+
+    .steps p {
+        margin-bottom: 2.5rem;
+    }
+
+    section.why-us {
+        background-color: #222222;
+    }
+
+    .why-us h2 {
+        padding: 2.5rem;
+    }
+
+    .why-us .col-left, .why-us .col-right {
+        width:70%;
+    }
+
+    .col-right h3 {
+        margin-top: 2rem;
+    }
+
+    .why-us{
+        margin-bottom: 0;
+    }
+ }
+ /* #endregion mobile */
